@@ -18,3 +18,10 @@ def toInt(list):
     for i in range(len(list)):
         list[i] = int(list[i])
     return list
+
+#converts list to a single string
+def toStr(list):
+    string = ""
+    for i in range(len(list)):
+        string += str(list[i])
+    return string
