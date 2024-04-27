@@ -2,7 +2,7 @@ import mastermind_lib as m
 yes = ["yes", "y", "ye", "yuh", "ya"]
 def inpput():
     answer, ans = input("Input answer: ").replace(" ",""), []
-    if len(answer) > 4 or answer.isdigit() == False:
+    if len(answer) != 4 or answer.isdigit() == False:
         print("Please submit a four digit number ")
         answer = input("Input answer: ").replace(" ", "")
     else: ans += [answer[i] for i in range(4)]
